@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: nodes
   tasks:
    - name: i want to ping all nodes
      ping:
@@ -10,6 +11,7 @@
        name: apache2 
        state: present
     
-   - name: i want to install tree
-     apt:
-      name: tree
+   - name: i want to install apache2 on redhat
+     yum:
+      name: httpd
+      state: present
