@@ -11,4 +11,7 @@
        name: apache2 
        state: present
     
-   
+   - name: i want to install apache2 on redhat
+     yum:
+      name: httpd
+      state: present
