@@ -17,9 +17,3 @@
 [redhatservers]
 172.31.7.150
 
-
-[webbrowser:vars]
-key=value
-myubuntu=apache2
-myredhat=httpd
-
