@@ -2,3 +2,7 @@
 key: value
 myubuntu: apache2
 myredhat: httpd
+
+
+myjavaubuntu: openjdk-8-jdk
+myjavaredhat: java-1.8.0-openjdk-devel
