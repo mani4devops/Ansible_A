@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webbrowser
   become: yes
   gather_facts: yes
   tasks:
