@@ -18,7 +18,7 @@
 172.31.7.150
 
 
-[webbrowser=vars]
+[webbrowser:vars]
 key=value
 myubuntu=apache2
 myredhat=httpd
