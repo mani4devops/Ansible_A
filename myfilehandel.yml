@@ -9,12 +9,14 @@
     apt:
       name: apache2
       state: present
-  - name: i want to restart server
-    service:
-       name: apache2
-       state: restarted
+    notify: restartweb 
 
   - name: i want to copy j2 file on node ansible
     template:  
       src: index.j2
       dest: /var/www/html/index.html
+  handlers:
+   - name: restartweb
+     service:
+       name: apache2
+       state: restarted
