@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.6.31
+- hosts: webbrowser
   become: yes
   tasks:
   - name: i want to install git, tree, wget
