@@ -12,7 +12,7 @@
 
   - name: i want to install tree
     apt:
-      name: "{{ item }}"
+      namee: "{{ item }}"
       state: present
     loop:
       - tree
