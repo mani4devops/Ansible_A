@@ -16,6 +16,7 @@
       state: present
     loop:
       - tree
+    ignore_errors: yes
   - name: i want to install wget
     apt:
       name: "{{ item }}"
