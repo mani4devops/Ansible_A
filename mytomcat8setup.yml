@@ -1,0 +1,5 @@
+---
+- hosts: 172.31.10.76
+  become: yes
+  tasks:
+    include: mytomcat8onubuntu
