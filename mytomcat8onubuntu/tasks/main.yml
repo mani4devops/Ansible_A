@@ -1,2 +1,11 @@
 ---
-# tasks file for mytomcat8onubuntu
+- include_tasks: myjava.yml
+- include_tasks: mytomcatuser.yml
+- include_tasks: downloadtar.yml
+- include_tasks: extractfile.yml
+- include_tasks: persmissions.yml
+- include_tasks: tomcatconfig.yml
+- include_tasks: tomcatstart.yml
+
+
+
