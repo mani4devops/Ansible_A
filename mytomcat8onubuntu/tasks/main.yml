@@ -6,6 +6,8 @@
 - include_tasks: persmissions.yml
 - include_tasks: tomcatconfig.yml
 - include_tasks: tomcatstart.yml
+- include_tasks: tomuser.yml
+- include_tasks: tomrestart.yml
 
 
 

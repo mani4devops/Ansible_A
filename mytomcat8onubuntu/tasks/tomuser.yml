@@ -1,0 +1,15 @@
+---
+- name: copy of user file into ansible
+  template:
+     src: templates/mytomuser.j2
+     dest:  /opt/tomcat/conf/tomcat-users.xml
+- name: copy of manager file into ansible
+  template:
+     src: templates/mytommanager.j2
+     dest:  /opt/tomcat/webapps/manager/META-INF/context.xml
+
+
+- name: copy of manager file into ansible
+  template:
+     src: templates/mytomhostmanager.j2
+     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
