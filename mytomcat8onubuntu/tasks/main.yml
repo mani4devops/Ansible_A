@@ -8,6 +8,9 @@
 - include_tasks: tomcatstart.yml
 - include_tasks: tomuser.yml
 - include_tasks: tomrestart.yml
+- include_tasks: deployejavaapp.yml
+- include_tasks: tomrestart.yml
+
 
 
 
