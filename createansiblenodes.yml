@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: crate ansible node
+    ec2:
+      key_name: mykey
+      instance_type: t2.micro
+      image: ami-0a7e4a64ccecc76f1
+      wait: yes
+      region: us-west-2
+      group: launch-wizard-9
+      count: 2
+      vpc_subnet_id: subnet-6228e93f
+      assign_public_ip: yes
+      instance_tags:
+         Name: ansiblenodes
+    

@@ -1,7 +1,7 @@
 ---
 - name: create directory
   file:
-    path: /opt/tomcat
+    path: /opt/tomcat/bin
     state: directory
     mode: '0755'
 - name: extract file
