@@ -1,6 +1,6 @@
 ---
 - name: javaapp deploye
   get_url:
-    url: https://mahadevops.s3-us-west-2.amazonaws.com/mahaLogin.war
-    dest: /opt/tomcat/webapps/mahaLogin.war
+    url: http://34.211.114.253:8082/artifactory/myjfrogrepo/1/target/mahaLogin-1.0.war
+    dest: /opt/tomcat/webapps/mahaLogin-1.0.war
     force_basic_auth: yes
