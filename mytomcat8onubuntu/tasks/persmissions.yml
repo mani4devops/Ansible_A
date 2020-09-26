@@ -11,41 +11,41 @@
   file:
     path: /opt/tomcat/conf
     state: directory
-    recurese: yes
+    recurse: yes
     mode: g+r
 
 - name: change mode on conf2
   file:
     path: /opt/tomcat/conf
     state: directory
-    recurese: yes
+    recurse: yes
     mode: g+x
 
 - name: change owner webapp
   file:
-    path: /opt/tomcat/webapp
+    path: /opt/tomcat/webapps/
     state: directory
-    recurese: yes
+    recurse: yes
     owner: tomcat
     
 - name: change owner work
   file:
-    path: /opt/tomcat/work
+    path: /opt/tomcat/work/
     state: directory
-    recurese: yes
+    recurse: yes
     owner: tomcat
 
 - name: change owner temp
   file:
-    path: /opt/tomcat/temp
+    path: /opt/tomcat/temp/
     state: directory
-    recurese: yes
+    recurse: yes
     owner: tomcat
 
 - name: change owner logs
   file:
-    path: /opt/tomcat/logs
+    path: /opt/tomcat/logs/
     state: directory
-    recurese: yes
+    recurse: yes
     owner: tomcat
 

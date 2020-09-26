@@ -3,7 +3,7 @@
   systemd: 
     name: tomcat
     daemon-reload: yes
-- name: started
+- name: start
   systemd:
     name: tomcat
     state: started
